@@ -101,7 +101,6 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 16px;
   line-height: 16px;
   color: #CC9933;
-  padding-left: 28px;
 }
 
 .header-up-right-svg {
@@ -109,12 +108,16 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 3px;
 }
 
-.header-up-right-svg:hover path {
+.header-up-right:hover path {
   fill: #E9C479;
 }
 
+.header-up-right path {
+  transition: fill 0.3s ease-in-out;
+}
+
 .header-up-right-svg {
-  transition: .3s ease-in-out;
+  transition: path .3s ease-in-out;
 }
 
 .header-down {
@@ -218,6 +221,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .header-btn {
+  font-size: 16px;
   color: #CC9933;
   border-style: none;
   background-color: #fff;
